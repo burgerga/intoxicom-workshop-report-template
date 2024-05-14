@@ -1,7 +1,9 @@
-# BioHackrXiv Publication Template
+# BioHackrXiv Template for INTOXICOM Workshop Reports
 
 Minimal example of a [BioHackrXiv](https://biohackrxiv.org/) publication that can be generated with the
-[Preview Service](http://preview.biohackrxiv.org/).
+[Preview Service](http://preview.biohackrxiv.org/) for an
+[INTOXICOM](https://elixir-europe.org/internal-projects/commissioned-services/integrating-toxicology-community) Workshop Report.
+Each of the workshops will write one report.
 
 ## Step 1: Clone this Template Repository
 
@@ -17,30 +19,30 @@ YAML code with metadata. It is important to get this part correct, because other
 generation will fail. The metadata looks like this:
 
 ```yaml
-title: 'BioHackEU22 Report for Project 26: Shedding the light on unknown chemical substances'
-title_short: 'BioHackEU22 #26: unknown chemical substances'
+title: 'INTOXICOM Workshop Report: Shedding the light on unknown chemical substances'
+title_short: 'INTOXIOM #1: unknown chemical substances'
 tags:
-  - cheminformatics
+  - toxicology
   - PubChem
   - unknown chemical substances
 authors:
-  - name: Egon Willighagen
+  - name: Marvin Martens
     affiliation: 1
 affiliations:
   - name: Dept of Bioinformatics - BiGCaT, NUTRIM, FHML, Maastricht University, Maastricht, NL
     index: 1
 date: 7 November 2022
 cito-bibliography: paper.bib
-event: BH22EU
-biohackathon_name: "BioHackathon Europe 2022"
-biohackathon_url:   "https://biohackathon-europe.org/"
-biohackathon_location: "Paris, France, 2022"
-group: Unknown chemical substances group
+event: INTOXICOM
+biohackathon_name: "INTOXICOM Workshops"
+biohackathon_url:   "[https://biohackathon-europe.org/](https://elixir-europe.org/internal-projects/commissioned-services/integrating-toxicology-community)"
+biohackathon_location: "Europe, 2024-2025"
+group: Workshop 1
 # URL to project git repo --- should contain the actual paper.md:
 git_url: https://github.com/biohackrxiv/publication-template
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
-authors_short: Egon Willighagen \emph{et al.}
+authors_short: Martens \emph{et al.}
 ```
 
 ### Which metadata to update?
@@ -65,12 +67,12 @@ your clone of the template, instead of the template itself:
 
 #### Only update for other BioHackathons
 
-The following fields should only be changed if you are not writing for the BioHackathon Europe 2022:
+The following fields should only be changed if you are not writing for the INTOXICOM Workshops:
 
-* event: BH22EU
-* biohackathon_name: "BioHackathon Europe 2022"
-* biohackathon_url:   "https://biohackathon-europe.org/"
-* biohackathon_location: "Paris, France, 2022"
+* event: INTOXICOM
+* biohackathon_name: "INTOXICOM Workshops"
+* biohackathon_url:   "[https://biohackathon-europe.org/](https://elixir-europe.org/internal-projects/commissioned-services/integrating-toxicology-community)"
+* biohackathon_location: "Europe, 2024-2025"
 
 ## Step 3: Writing the article
 
