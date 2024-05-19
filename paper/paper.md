@@ -1,39 +1,34 @@
 ---
-title: 'BioHackEU23 report: Template for the very long title'
-title_short: 'BioHackEU23 #26: unknown chemical substances'
+title: 'INTOXICOM Workshop Report: Shedding the light on unknown chemical substances'
+title_short: 'INTOXIOM #1: unknown chemical substances'
 tags:
-  - cheminformatics
+  - toxicology
   - PubChem
   - unknown chemical substances
 authors:
-  - name: First Author
+  - name: Marvin Martens
     affiliation: 1
-  - name: Last Author
-    orcid: 0000-0000-0000-0000
-    affiliation: 2
 affiliations:
-  - name: First Affiliation
+  - name: Dept of Bioinformatics - BiGCaT, NUTRIM, FHML, Maastricht University, Maastricht, NL
     index: 1
-  - name: Second Affiliation
-    index: 2
-date: 8 November 2023
+date: 7 November 2022
 cito-bibliography: paper.bib
-event: BH23EU
-biohackathon_name: "BioHackathon Europe 2023"
-biohackathon_url:   "https://biohackathon-europe.org/"
-biohackathon_location: "Barcelona, Spain, 2023"
-group: Project 26
+event: INTOXICOM
+biohackathon_name: "INTOXICOM Workshops"
+biohackathon_url:   "[https://biohackathon-europe.org/](https://elixir-europe.org/internal-projects/commissioned-services/integrating-toxicology-community)"
+biohackathon_location: "Europe, 2024-2025"
+group: Workshop 1
 # URL to project git repo --- should contain the actual paper.md:
 git_url: https://github.com/biohackrxiv/publication-template
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
-authors_short: First Author \emph{et al.}
+authors_short: Martens \emph{et al.}
 ---
 
 
 # Introduction
 
-As part of the BioHackathon Europe 2023, we here report...
+As part of the INTOXICOM Implementation Study for the ELIXIR Toxicology Community a series of workshops is organized. Here, we here report on the Xth workshop...
 
 # Formatting
 
