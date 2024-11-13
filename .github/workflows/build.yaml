@@ -1,0 +1,30 @@
+name: Build artifact
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+jobs:
+  build-artifact:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - uses: addnab/docker-run-action@v3
+      with:
+        registry: gcr.io
+        image: biohackrxiv/bhxiv-gen-pdf:master
+        options: -v ${{ github.workspace }}:/work -w /work
+        run: |
+          echo "Running Script"
+          gen-pdf paper
+    - name: Create info file
+      run: |
+         echo -e "ref: $GITHUB_REF \ncommit: $GITHUB_SHA\nbuild: $(date +"%Y-%m-%dT%H:%M:%SZ")" \
+         > info.txt
+    - name: Update latest release
+      uses: pyTooling/Actions/releaser@main
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        files: |
+          paper.pdf
+          info.txt
