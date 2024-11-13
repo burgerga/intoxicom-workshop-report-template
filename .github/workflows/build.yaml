@@ -26,5 +26,5 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         files: |
-          paper.pdf
+          paper/paper.pdf
           info.txt
