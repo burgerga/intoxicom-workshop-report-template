@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-    - uses: kohlerdominik/docker-run-action@v2
+    - uses: kohlerdominik/docker-run-action@v2.0.0
       with:
         image: biohackrxiv/bhxiv-gen-pdf:master
         volumes: ${{ github.workspace }}:/work
