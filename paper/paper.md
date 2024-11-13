@@ -8,7 +8,7 @@ tags:
 authors:
   - name: Marvin Martens
     affiliation: 1
-- name: Egon Willighagen
+  - name: Egon Willighagen
     affiliation: 1
 affiliations:
   - name: Dept of Bioinformatics - BiGCaT, NUTRIM, FHML, Maastricht University, Maastricht, NL
