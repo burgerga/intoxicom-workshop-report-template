@@ -9,11 +9,11 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-    - uses: addnab/docker-run-action@v3
+    - uses: kohlerdominik/docker-run-action@v2
       with:
-        registry: ghcr.io
         image: biohackrxiv/bhxiv-gen-pdf:master
-        options: -v ${{ github.workspace }}:/work -w /work
+        volumes: ${{ github.workspace }}:/work
+        workdir: /work
         run: |
           echo "Running Script"
           gen-pdf paper
