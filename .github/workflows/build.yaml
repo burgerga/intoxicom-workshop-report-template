@@ -11,7 +11,7 @@ jobs:
       uses: actions/checkout@v4
     - uses: kohlerdominik/docker-run-action@v2.0.0
       with:
-        image: biohackrxiv/bhxiv-gen-pdf:master
+        image: ghcr.io/biohackrxiv/bhxiv-gen-pdf@master
         volumes: ${{ github.workspace }}:/work
         workdir: /work
         run: |
